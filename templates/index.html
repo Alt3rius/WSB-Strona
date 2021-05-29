@@ -5,18 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/styles.css">
     <link rel="icon" type="image/png" href="static/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Homepage</title>
 </head>
 <body>
-    <h1>MIKOŁAJ KULA</h1>
     
-    
-    <p class="my">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis ab repellendus quis obcaecati voluptas delectus beatae aut quam incidunt! Facere voluptates, reprehenderit quod rerum commodi veritatis temporibus assumenda quia.</p>
-    <center>
-    <p>NAVIGATION:</p>
-    <div><a href='/about'>ABOUT ME</a></div>
-    <div><a href='/gallery'>GALLERY</a></div>
-    <div><a href='/contact'>CONTACT</a></div>
-    </center>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">MIKOŁAJ KULA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href='/about'>ABOUT ME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href='/gallery'>GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href='/contact'>CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- CAROUSEL -->
+      <div class="willbenavbar">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="static/1.jpg" class="d-block w-100" alt="1" width="200" height="600">
+          </div>
+          <div class="carousel-item">
+            <img src="static/2.jpg" class="d-block w-100" alt="2" width="200" height="600">
+          </div>
+          <div class="carousel-item">
+            <img src="static/3.jpg" class="d-block w-100" alt="3" width="200" height="600">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </body>
 </html>

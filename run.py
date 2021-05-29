@@ -17,7 +17,7 @@ def contact():
 
 @app.route('/gallery')
 def gallery():
-    return render_template('gallery.html')
+    return render_template('gallery.html', derp='deeeerp')
 
 @app.errorhandler(404)
 def error_404(error):
